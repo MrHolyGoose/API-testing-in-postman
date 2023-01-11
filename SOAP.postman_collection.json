@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "d7dc9046-05b9-4ac7-a059-780b6398a3f0",
+		"name": "SOAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24866119"
+	},
+	"item": [
+		{
+			"name": "CountryCurrency",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryCurrency xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>PL</sCountryISOCode>\r\n        </CountryCurrency>\r\n    </Body>\r\n</Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"oorsprong",
+						"org"
+					],
+					"path": [
+						"websamples.countryinfo",
+						"CountryInfoService.wso"
+					],
+					"query": [
+						{
+							"key": "WSDL",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FullCountryInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <FullCountryInfo xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>PL</sCountryISOCode>\r\n        </FullCountryInfo>\r\n    </Body>\r\n</Envelope>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"oorsprong",
+						"org"
+					],
+					"path": [
+						"websamples.countryinfo",
+						"CountryInfoService.wso"
+					],
+					"query": [
+						{
+							"key": "WSDL",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LanguageISOCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <LanguageISOCode xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sLanguageName>Polish</sLanguageName>\r\n        </LanguageISOCode>\r\n    </Body>\r\n</Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+					"protocol": "http",
+					"host": [
+						"webservices",
+						"oorsprong",
+						"org"
+					],
+					"path": [
+						"websamples.countryinfo",
+						"CountryInfoService.wso"
+					],
+					"query": [
+						{
+							"key": "WSDL",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
